@@ -444,7 +444,7 @@ const RegisterScreen = () => {
               fontFamily: "latoBold",
               paddingVertical: 6,
             }}
-            onPress={() => console.log(values)}
+            onPress={() => navigation.navigate(navigationString.Home)}
           >
             Register
           </Button>

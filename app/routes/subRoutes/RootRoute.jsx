@@ -5,6 +5,8 @@ import navigationString from "../../../components/constant/navigationString";
 import WelcomeScreens from "../../screens/welcomeScreen";
 import LoginScreen from "../../screens/loginScreen";
 import RegisterScreen from "../../screens/registerScreen";
+import HomeScreens from "../../screens/homeScreens";
+import HomeRoute from "./HomeRoute";
 
 const Stack = createStackNavigator();
 
@@ -27,6 +29,10 @@ const RootRoute = () => {
       <Stack.Screen
         name={navigationString.Login}
         component={LoginScreen}
+      />
+      <Stack.Screen
+        name={navigationString.Home}
+        component={HomeRoute}
       />
     </Stack.Navigator>
   );
