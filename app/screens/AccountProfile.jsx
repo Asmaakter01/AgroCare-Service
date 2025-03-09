@@ -1,13 +1,21 @@
 import React from "react";
 import { View, Text, Image, TouchableOpacity } from "react-native";
 import { useTheme } from "react-native-paper";
+import ScreenHeader from "../../components/core/ScreenHeader";
+import { useNavigation } from "@react-navigation/native";
 
 const AccountProfile = () => {
   const theme = useTheme();
+  const navigation = useNavigation()
   return (
     <View
-      style={{ flex: 1, backgroundColor: theme.colors.background, padding: 20 }}
+      style={{ flex: 1, backgroundColor: theme.colors.background, paddingHorizontal: 20 }}
     >
+        <View style={{
+            marginBottom:20
+        }}>
+        <ScreenHeader title={"Account"} onPress={()=>navigation.goBack()}/>
+        </View>
       {/* Profile Section */}
       <View
         style={{ flexDirection: "row", alignItems: "center", marginBottom: 20 }}
