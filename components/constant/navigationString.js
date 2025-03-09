@@ -1,3 +1,5 @@
 export default{
-    Welcome:"welcome"
+    Welcome:"welcome",
+    Login:"login",
+    Register:"register",
 }
